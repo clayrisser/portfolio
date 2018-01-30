@@ -32,7 +32,7 @@ pipeline:
     secrets:
       - rancher_access_key
       - rancher_secret_key
-    rancher_url: https://orch.spinach.cafe
+    rancher_url: https://orch.jamrizzi.com
     access_key: ${RANCHER_ACCESS_KEY}
     secret_key: ${RANCHER_SECRET_KEY}
     stack: jamrizzi--portfolio
