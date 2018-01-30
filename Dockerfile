@@ -36,7 +36,7 @@ RUN mkdir -p /usr/local/sbin && \
     find /var/www/html -type d -exec chmod 777 {} \; && \
     chmod -R +x /usr/local/sbin && \
     apk del deps && \
-    for i in `gem list --no-versions`; do gem uninstall -aIx $i; done && \
+    for i in `gem list --no-versions`; do gem uninstall -aIx $i &>/dev/null; done && \
     rm -rf /tmp/* /tmp/.* &>/dev/null || true
 
 EXPOSE 4000
