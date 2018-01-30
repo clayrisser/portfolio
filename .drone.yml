@@ -1,0 +1,68 @@
+pipeline:
+  restore_cache:
+    image: drillster/drone-volume-cache:latest
+    restore: true
+    mount:
+    volumes:
+      - /tmp/cache:/cache
+    when:
+      event: push
+      branch:
+        - master
+
+  build:
+    image: docker:latest
+    entrypoint: []
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    commands:
+      - "docker build -t jamrizzi/portfolio:${DRONE_BRANCH/master/latest} -f ./Dockerfile ./"
+    when:
+      event: push
+      branch:
+        - master
+
+  push:
+    image: docker:latest
+    secrets:
+      - docker_username
+      - docker_password
+    entrypoint: []
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    commands:
+      - "docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD"
+      - "docker push jamrizzi/portfolio:${DRONE_BRANCH/master/latest}"
+    when:
+      event: push
+      branch:
+        - master
+
+  deploy:
+    image: majest/drone-rancher:latest
+    secrets:
+      - rancher_access_key
+      - rancher_secret_key
+    rancher_url: https://orch.spinach.cafe
+    access_key: ${RANCHER_ACCESS_KEY}
+    secret_key: ${RANCHER_SECRET_KEY}
+    stack: jamrizzi--portfolio
+    service: oauth-api
+    docker_image: jamrizzi/portfolio:${DRONE_BRANCH/master/latest}
+    timeout: 300
+    confirm: true
+    when:
+      event: push
+      branch:
+        - master
+
+  rebuild_cache:
+    image: drillster/drone-volume-cache:latest
+    rebuild: true
+    mount:
+    volumes:
+      - /tmp/cache:/cache
+    when:
+      event: push
+      branch:
+        - master
