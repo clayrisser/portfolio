@@ -4,14 +4,13 @@ ARG tag=latest
 
 LABEL image=jamrizzi/portfolio:${tag} \
       maintainer="Jam Risser <jam@jamrizzi.com> (https://jam.jamrizzi.com)" \
-      base=alpine:3.4
+      base=alpine:3.5
 
 RUN apk add --no-cache \
       tini && \
     apk add --no-cache --virtual deps \
       build-base \
       libffi-dev \
-      openssh-client \
       rsync \
       ruby \
       ruby-bundler \
