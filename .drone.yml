@@ -47,7 +47,7 @@ pipeline:
     access_key: ${RANCHER_ACCESS_KEY}
     secret_key: ${RANCHER_SECRET_KEY}
     stack: jamrizzi--portfolio
-    service: oauth-api
+    service: portfolio
     docker_image: jamrizzi/portfolio:${DRONE_BRANCH/master/latest}
     timeout: 300
     confirm: true
