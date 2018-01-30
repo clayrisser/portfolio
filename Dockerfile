@@ -9,7 +9,8 @@ LABEL image=jamrizzi/portfolio:${tag} \
 RUN apk add --no-cache \
       tini && \
     apk add --no-cache --virtual deps \
-      rsync
+      rsync \
+      ruby
 
 WORKDIR /var/www/html
 
