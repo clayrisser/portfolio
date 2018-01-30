@@ -1,15 +1,4 @@
 pipeline:
-  restore_cache:
-    image: drillster/drone-volume-cache:latest
-    restore: true
-    mount:
-    volumes:
-      - /tmp/cache:/cache
-    when:
-      event: push
-      branch:
-        - master
-
   build:
     image: docker:latest
     entrypoint: []
@@ -51,17 +40,6 @@ pipeline:
     docker_image: jamrizzi/portfolio:${DRONE_BRANCH/master/latest}
     timeout: 300
     confirm: true
-    when:
-      event: push
-      branch:
-        - master
-
-  rebuild_cache:
-    image: drillster/drone-volume-cache:latest
-    rebuild: true
-    mount:
-    volumes:
-      - /tmp/cache:/cache
     when:
       event: push
       branch:
