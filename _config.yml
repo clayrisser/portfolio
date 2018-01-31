@@ -6,6 +6,7 @@ baseurl: ""
 url: ""
 twitter_username: jamrizzi
 github_username:  jamrizzi
+github_fork_banner: https://github.com/jamrizzi/jekyll-nerd-portfolio
 skills:
   amazonwebservices: https://aws.amazon.com
   react: https://github.com/facebook/react
