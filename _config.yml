@@ -8,32 +8,69 @@ twitter_username: jamrizzi
 github_username:  jamrizzi
 github_fork_banner: https://github.com/jamrizzi/jekyll-nerd-portfolio
 skills:
-  amazonwebservices: https://aws.amazon.com
-  react: https://github.com/facebook/react
-  ruby: https://www.ruby-lang.org
-  nodejs: https://nodejs.org
-  python: https://python.com
-  linux: https://kernel.org
-  docker: https://www.docker.com
-  nginx: https://nginx.org
-  go: https://golang.org
-  django: https://www.djangoproject.com
-  cplusplus: http://www.cplusplus.com
-  bootstrap: https://getbootstrap.com
-  gulp: https://gulpjs.com/
-  webpack: https://webpack.js.org
-  angularjs: https://angular.io
-  babel: https://babeljs.io
-  express: http://expressjs.com
-  git: https://git-scm.com
-  html5: https://www.w3.org/TR/html52
-  javascript: https://www.ecma-international.org/publications/standards/Ecma-262.htm
-  mongodb: https://www.mongodb.com
-  mysql: https://www.mysql.com
-  php: https://php.net
-  sass: http://sass-lang.com
-  vim: http://www.vim.org
-  mocha: https://mochajs.org
+  - icon: amazonwebservices-plain
+    href: https://aws.amazon.com
+    title: Amazon Web Services
+  - icon: ruby-plain-wordmark
+    href: https://www.ruby-lang.org
+    title: Ruby
+  - icon: python-plain-wordmark
+    href: https://python.com
+    title: Python
+  - icon: go-plain
+    href: https://golang.org
+    title: Golang
+  - icon: cplusplus-plain-wordmark
+    href: http://www.cplusplus.com
+    title: C++
+  - icon: javascript-plain
+    href: https://www.ecma-international.org/publications/standards/Ecma-262.htm
+    title: JavaScript
+  - icon: php-plain
+    href: https://php.net
+    title: PHP
+  - icon: sass-plain
+    href: http://sass-lang.com
+    title: Sass
+  - icon: nodejs-plain
+    href: https://nodejs.org
+    title: NodeJS
+  - icon: linux-plain
+    href: https://kernel.org
+    title: Linux
+  - icon: docker-plain-wordmark
+    href: https://www.docker.com
+    title: Docker
+  - icon: nginx-plain-wordmark
+    href: https://nginx.org
+    title: Nginx
+  - icon: django-plain-wordmark
+    href: https://www.djangoproject.com
+    title: Django
+  - icon: mongodb-plain-wordmark
+    href: https://www.mongodb.com
+    title: MongoDB
+  - icon: mysql-plain-wordmark
+    href: https://www.mysql.com
+    title: MySQL
+  - icon: react-plain-wordmark
+    href: https://github.com/facebook/react
+    title: React
+  - icon: angularjs-plain
+    href: https://angular.io
+    title: Angular
+  - icon: bootstrap-plain-wordmark
+    href: https://getbootstrap.com
+    title: Bootstrap
+  - icon: gulp-plain
+    href: https://gulpjs.com/
+    title: Gulp
+  - icon: git-plain-wordmark
+    href: https://git-scm.com
+    title: Git
+  - icon: vim-plain
+    href: http://www.vim.org
+    title: Vim
 markdown: kramdown
 theme: jekyll-nerd-portfolio
 plugins:
