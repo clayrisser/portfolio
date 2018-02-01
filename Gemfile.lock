@@ -29,7 +29,7 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.9.2)
       jekyll (~> 3.3)
-    jekyll-nerd-portfolio (0.1.10)
+    jekyll-nerd-portfolio (0.1.11)
       jekyll (~> 3.7)
     jekyll-read-time (0.1.2)
       jekyll (~> 3.0)
