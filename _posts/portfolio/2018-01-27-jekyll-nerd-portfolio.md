@@ -3,7 +3,7 @@ layout: post
 title: Jekyll Nerd Portfolio
 date: 2018-01-27 15:18:10 -0600
 categories: portfolio
-featured-img: blog/2018-01-27-jekyll-nerd-portfolio.jpg
+featured-img: portfolio/2018-01-27-jekyll-nerd-portfolio.jpg
 ---
 
 Jekyll portfolio theme for nerds
