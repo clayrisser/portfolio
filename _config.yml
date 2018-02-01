@@ -3,7 +3,7 @@ name: Jam Risser
 email: jam@jamrizzi.com
 description: Software Engineer from Austin, TX
 baseurl: ""
-url: ""
+url: "https://jam.jamrizzi.com"
 twitter_username: jamrizzi
 github_username:  jamrizzi
 github_fork_banner: https://github.com/jamrizzi/jekyll-nerd-portfolio
