@@ -75,3 +75,4 @@ markdown: kramdown
 theme: jekyll-nerd-portfolio
 plugins:
   - jekyll-feed
+  - jekyll-analytics
