@@ -75,8 +75,8 @@ jekyll_analytics:
   Matomo:
     url: analytics.jamrizzi.com
     siteId: '1'
-isso-url: https://comments.jamrizzi.com
-comments: false
+isso_url: https://comments.jamrizzi.com
+comments: true
 markdown: kramdown
 theme: jekyll-nerd-portfolio
 plugins:
