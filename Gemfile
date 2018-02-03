@@ -7,7 +7,7 @@ gem "jekyll-nerd-portfolio", "~> 0.2.1"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-read-time", "~> 0.1.1"
-  gem "jekyll-analytics", "~> 0.1.9"
+  gem "jekyll-analytics-patch"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
