@@ -73,7 +73,7 @@ skills:
     title: Vim
 jekyll_analytics:
   Matomo:
-    url: analytics.jamrizzi.com
+    url: analytics.jamrizzi.com/
     siteId: '1'
 markdown: kramdown
 theme: jekyll-nerd-portfolio
