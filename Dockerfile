@@ -21,7 +21,7 @@ RUN apk add --no-cache \
 WORKDIR /tmp
 
 COPY Gemfile /tmp
-RUN bundle install
+RUN bundle lock && bundle install
 COPY ./ /tmp
 RUN bundle exec jekyll build --verbose
 
