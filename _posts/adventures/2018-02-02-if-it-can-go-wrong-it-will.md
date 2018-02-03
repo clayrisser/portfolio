@@ -14,4 +14,6 @@ I then remember I have a credit card, but soon “discover” most places in Lon
 
 . . . in the morning I’m able to find a USB socket in a McDonald’s, and Discover helps me “discover” one of the few ATM’s that supports their card. I navigate my way to the ATM only to find that it was turned off and unplugged. After more phone calls I finally find another ATM to try. This one has a Discover sticker on it, so things should work this time. Well, this ATM had another trick I did not account. It decided (probably consciously) to freeze and crash. After more phone calls and waiting for an ATM technician to come and fix it, I finally get some money to pay for my stay in London.
 
+It's great to have friends btw. Shout-out to Derek who helped me get things figured out.
+
 I thought I was going to have to be creative to find adventures to write down.
