@@ -1,9 +1,13 @@
 FROM nginx:1.13.8-alpine
 
 ARG tag=latest
+ARG jekyll_env=production
+
+ENV JEKYLL_ENV=${jekyll_env}
 
 LABEL image=jamrizzi/portfolio:${tag} \
       maintainer="Jam Risser <jam@jamrizzi.com> (https://jam.jamrizzi.com)" \
+      jekyll_env=${jekyll_env} \
       base=alpine:3.5
 
 RUN apk add --no-cache \
