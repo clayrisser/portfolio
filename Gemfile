@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 3.7.2"
 
-gem "jekyll-nerd-portfolio", "~> 0.1.12"
+gem "jekyll-nerd-portfolio", "~> 0.1.13"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
