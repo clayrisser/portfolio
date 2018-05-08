@@ -1,7 +1,0 @@
-version: '2'
-
-services:
-  portfolio:
-    image: jamrizzi/portfolio:latest
-    ports:
-      - 4000:4000
