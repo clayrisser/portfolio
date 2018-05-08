@@ -1,33 +1,24 @@
-import React from 'react';
 import Link from 'gatsby-link';
+import React, { Component } from 'react';
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem'
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem'
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none'
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
-);
+let Tabs = null;
+let Tab = null;
 
-export default Header;
+if (typeof window !== 'undefined') {
+  ({ Tabs, Tab } = require('carbon-components-react'));
+}
+
+export default class Header extends Component {
+  render() {
+    if (typeof window === 'undefined') return <div />;
+    return (
+      <div>
+        <Tabs>
+          <Tab label="Home" />
+          <Tab label="Blog" />
+          <Tab label="Portfolio" />
+        </Tabs>
+      </div>
+    );
+  }
+}
